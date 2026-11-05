@@ -31,7 +31,21 @@ The VC–Student uses a learned single index of atmospheric and site-related pre
 | `code/pipeline_utils.py` | Shared data-processing and numerical utilities |
 | `requirements.txt`, `R_REQUIREMENTS.txt` | Declared Python and R dependencies |
 
-Generated predictions, intermediate coefficient/threshold tables, model outputs, and the manuscript's figures are excluded from Git history because of their size or release status. The historical `OLDPAPER` orchestrator and archived experiments are not part of the published source tree.
+Generated predictions, intermediate coefficient/threshold tables, and model outputs are excluded from Git history. Selected research figures are published in [figure_outputs/](figure_outputs/). The historical `OLDPAPER` orchestrator and archived experiments are not part of the published source tree.
+
+## Published figure outputs
+
+Selected manuscript-related and diagnostic figures are available in [figure_outputs/](figure_outputs/).
+
+- `Figure_05_student_teacher_wbt_by_climate.png` — student–teacher wet-bulb threshold comparisons.
+- `Figure_06_index_weights.png` — single-index weights.
+- `Figure_09_probability_vs_index.png` — predicted probability versus index.
+- `Figure_13_roc_precision_recall.png` — ROC and precision–recall curves.
+- `Figure_14_reliability.png` — reliability plot.
+- `Figure_16_air_index_distillation_comparison.png` — distillation comparison.
+- Additional PNG and PDF files — spatial maps and diagnostic visualizations.
+
+Some diagnostic files do not correspond directly to numbered figures in the manuscript.
 
 ## Required inputs
 
