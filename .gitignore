@@ -1,0 +1,42 @@
+# Python and R environments
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.Rhistory
+.RData
+.Rproj.user/
+.ipynb_checkpoints/
+# Large input data and pretrained teacher artifact (review redistribution rights)
+data/*.csv
+data/*.parquet
+data/*.h5
+data/*.hdf5
+# Generated outputs and archived runs
+outputs/
+run_archive/
+review_package/
+figures/
+figures_final/
+# Manuscript build artifacts and private drafts
+manuscript/
+*.aux
+*.log
+*.synctex.gz
+# Temporary/backups
+*.zip
+*.bak
+*.tmp
+*.before_*
+*.ps1.before_*
+# Secrets
+.env
+.env.*
+*.pem
+*.key
+credentials.json
+/RUN_ALL_INDEX_ONLY_OLDPAPER.ps1
+/RUN_FIGURES_FROM_EXISTING_OUTPUTS.ps1
+/data/Koeppen-Geiger-ASCII.txt
+/.final_figure_build_*/
+/code/_tmp_final_*

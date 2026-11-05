@@ -1,0 +1,14 @@
+The map scripts automatically install/load these R packages through pacman:
+
+pacman
+tidyverse
+scales
+viridis
+rnaturalearth
+rnaturalearthdata
+sf
+patchwork
+grid
+
+The project data folder should contain Koeppen-Geiger-ASCII.txt for the climate-zone boundaries.
+If it is absent, the maps are still created with coastlines, but without climate boundaries.
