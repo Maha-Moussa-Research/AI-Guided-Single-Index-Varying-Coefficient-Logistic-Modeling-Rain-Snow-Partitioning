@@ -81,11 +81,11 @@ USE_DISTILLATION = True  # flip to False for the index-only/no-distillation abla
 BASE_RUN_TAG = "distill" if USE_DISTILLATION else "nodistill"
 RUN_TAG = f"index_only_{BASE_RUN_TAG}"
 
-if USE_DISTILLATION and not TEACHER_WEIGHTS.is_file():
-    raise FileNotFoundError(
-        f"Teacher weights missing: {TEACHER_WEIGHTS}. "
-        "Provide the teacher checkpoint to run distillation."
-    )
+if USE_DISTILLATION and not Path(TEACHER_WEIGHTS).exists():
+    print("[warn] USE_DISTILLATION=True, but teacher weights not found → switching to no-distill.")
+    USE_DISTILLATION = False
+    BASE_RUN_TAG = "nodistill"
+    RUN_TAG = f"index_only_{BASE_RUN_TAG}"
 
 TEACHER_GATE_TYPE   = "relu"
 
